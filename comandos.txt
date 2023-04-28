@@ -1,0 +1,9 @@
+Comandos Git
+
+Movernos en las carpetas
+	cd 
+Mostrar carpetas
+	ls
+Inicializa un repositorio
+	git init	
+Muetsra las 	
