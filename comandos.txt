@@ -4,6 +4,19 @@ Movernos en las carpetas
 	cd 
 Mostrar carpetas
 	ls
-Inicializa un repositorio
+Inicializa un repositorio, indica que hay un reposistorio y todas las modificiones git podra verlos de cuando y que se modifica
 	git init	
-Muetsra las 	
+Muestra la versiones o cambios realizados dentro del repositorio y el estado de ellos
+	git status
+Monitoreado de cambios, se necesita agregar el archivo
+	git add <file>
+Agregar todos los archivos
+	git add .
+Remover el monitoreo del repositorio
+	git rm --cached <file>
+Crear un checkpoint o commit del archivo, (guarda lo que se modifico) (-m es el mensaje y se pone en comillas)
+	git commit -m "creando archivo index con lista de curso"
+
+	En caso de error se necesita colocar 2 comandos (email y nombre en comillas)
+		git config --global user.email <email>
+		git config --global user.name <nombre>
