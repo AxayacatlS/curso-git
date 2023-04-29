@@ -124,3 +124,5 @@ Agregar branch y posicionarnos ahi (b para crear nuevo)
 posicionado en master hacer
 	git merge <nombre de la rama>
 
+Ver commits
+	git log --graph
