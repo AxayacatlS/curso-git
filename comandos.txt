@@ -135,3 +135,19 @@ Cuando hacemos un add antes el commit para regresar cambios
 
 Revertir por comandos
 git revert 0d67eeb5893d598044b5734e81e15ac81d4ea8c1
+
+Guardar modificaciones sin hacer commit
+	git stash
+
+3ad98c0
+
+Ver lista datos a volver a modificar
+	git stash list
+	
+Regresar stash 
+	git stash apply <numero de lista>
+	
+Regresar stash y eliminar de la lista (regresa como una pila el ultimo elemento)
+	git stash pop
+
+	
