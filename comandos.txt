@@ -2,21 +2,107 @@ Comandos Git
 
 Movernos en las carpetas
 	cd 
+
 Mostrar carpetas
 	ls
+
 Inicializa un repositorio, indica que hay un reposistorio y todas las modificiones git podra verlos de cuando y que se modifica
 	git init	
+
 Muestra la versiones o cambios realizados dentro del repositorio y el estado de ellos
 	git status
+
 Monitoreado de cambios, se necesita agregar el archivo
 	git add <file>
+
 Agregar todos los archivos
 	git add .
+
 Remover el monitoreo del repositorio
 	git rm --cached <file>
+
 Crear un checkpoint o commit del archivo, (guarda lo que se modifico) (-m es el mensaje y se pone en comillas)
 	git commit -m "creando archivo index con lista de curso"
 
 	En caso de error se necesita colocar 2 comandos (email y nombre en comillas)
 		git config --global user.email <email>
 		git config --global user.name <nombre>
+
+Lista de commits hechos (hash del commit, es una identificacion unica)
+	git log
+
+Limpiar pantalla
+	clear
+
+Lista de commits de manera resumida
+	git log --oneline
+
+Visualizar las modificaciones de los archivos
+	git log -p
+
+	Para salir del editor se teclea (dos puntos, p):
+		:p
+	LINK para conocer visualizaciones de historial en git: devhints.io/git-log
+
+Visualizar los hash de los commits
+	git log --pretty="format:%H"
+
+Visualizar el hash y mensaje de commit
+ 	git log --pretty="format:%h %s"
+
+Visualizar el hash, mensaje de commit y email
+	git log --pretty="format:%h %s %ae"
+
+Crear un archivo en la carpeta de repositorio y colocar lo que no vamos a utilizar
+	.gitignore
+	
+		carpeta/
+		a.config
+
+Crera carpeta
+	mkdir <nombre>
+
+Repositorio puro de modificaciones de los archivos
+	git init --bare
+		nos genera una ruta y la copias
+			ejemplo C:/Users/ascen/Desktop/ONE CURSO 1/servidor/
+
+Listar servidores remoto
+	git remote
+		origin: es el nombre que pone git por defecto cuando agregamos un repositorio
+
+Como agregar un servidor remoto (el nombre puede ir sin comillas) (si la ruta tiene espacion poner entre comillas)
+	git remote add <nombre> <ruta>
+
+Nos muestra informacion de remote
+	git remote -v
+		(fetch)=Lugar donde vamos a obtener las informaciones desde el servidor remoto
+		(push)=Lugar donde vamos a enviar las direcciones
+
+Clonar el repositorio
+	git clone <direccion del reposistorio>
+		Ejemplo: git clone "/c/Users/ascen/Desktop/ONE CURSO 1/servidor" proyecto
+
+Empujar los datos a servidor 
+	git push <nombre del servidor> <branchs>
+
+Cambiar nombre del origin del servidor para servdiro local para aparentar apariencias
+ 	git remote rename <nuevo nombre> <servidor>
+
+				git remote rename origin local
+		ejemplo:git remote rename local servidorlocal
+
+Agregar el repositorio servidor local
+	git pull <servidor> <branchs>
+
+Enviar datos al servidor local
+	git push <servidor> <branchs>
+	git push sevridorlocal master
+
+Agregar desde un servidor de Git HUB
+	git remote add origin https://github.com/AxayacatlS/curso-git.git
+	*git branch -M main (no es necesario)
+	git push -u origin main
+
+	git push origin main (permite controlar lo que se esta mandando)
+
