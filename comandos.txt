@@ -126,3 +126,9 @@ posicionado en master hacer
 
 Ver commits
 	git log --graph
+
+Rgeresar cambios
+	git restore <file>
+
+Cuando hacemos un add antes el commit para regresar cambios
+	"git restore --staged <file>
