@@ -132,3 +132,6 @@ Rgeresar cambios
 
 Cuando hacemos un add antes el commit para regresar cambios
 	"git restore --staged <file>
+
+Revertir por comandos
+git revert 0d67eeb5893d598044b5734e81e15ac81d4ea8c1
