@@ -106,3 +106,21 @@ Agregar desde un servidor de Git HUB
 
 	git push origin main (permite controlar lo que se esta mandando)
 
+Visualizar branchs
+	git branch
+
+Agregar nueva branch
+	git branch <nombre>
+
+Cambiar de branch
+	git checkout titulo
+
+PAGINA PARA MOSTRAR BRANCH O EL DISEÑO A TRAVES DE Comandos
+	https://git-school.github.io/visualizing-git/
+
+Agregar branch y posicionarnos ahi (b para crear nuevo)
+	git checkout -b lista
+
+posicionado en master hacer
+	git merge <nombre de la rama>
+
